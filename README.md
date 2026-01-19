@@ -134,7 +134,7 @@ And then include `CXXGraph.hpp` as follows:
 
 ```cxx
 // main.cxx
-#include <CXXGraph.hpp>
+#include <CXXGraph.hpp>  // or, CXXGraph/CXXGraph.hpp
 
 int main() { /* ... */ }
 ```
@@ -142,15 +142,15 @@ int main() { /* ... */ }
 Finally, compile while adding the path `node_modules/cxxgraph.cxx` to your compiler's include paths.
 
 ```bash
-$ clang++ -I./node_modules/cxxgraph.cxx main.cxx  # or, use g++
-$ g++     -I./node_modules/cxxgraph.cxx main.cxx
+$ clang++ -std=c++17 -I./node_modules/cxxgraph.cxx main.cxx  # or, use g++
+$ g++     -std=c++17 -I./node_modules/cxxgraph.cxx main.cxx
 ```
 
 You may also use a simpler approach with the [cpoach](https://www.npmjs.com/package/cpoach.sh) tool, which automatically adds the necessary include paths of all the installed dependencies for your project.
 
 ```bash
-$ cpoach clang++ main.cxx  # or, use g++
-$ cpoach g++     main.cxx
+$ cpoach clang++ -std=c++17 main.cxx  # or, use g++
+$ cpoach g++     -std=c++17 main.cxx
 ```
 
 ## Prerequisites
@@ -170,7 +170,7 @@ In this example, the shortest path between nodeA and nodeC is obtained using Dij
 
 ```cpp
 #include <iostream>
-#include "CXXGraph/CXXGraph.hpp"
+#include <CXXGraph/CXXGraph.hpp>
 
 int main(){
   CXXGraph::Node<int> nodeA("A", 1);
