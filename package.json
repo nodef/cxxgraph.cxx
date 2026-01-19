@@ -1,27 +1,26 @@
 {
-  "name": "httplib.cxx",
-  "version": "1.2025.12",
-  "description": "A C++ header-only HTTP/HTTPS server and client library; yhirose (2012).",
+  "name": "cxxgraph.cxx",
+  "version": "4.2026.1",
+  "description": "Header-Only C++ Library for Graph Representation and Algorithms; ZigRazor (2020).",
   "keywords": [
-    "c",
+    "c++",
     "library",
-    "http",
-    "https",
-    "server",
-    "client",
+    "graph",
+    "representation",
+    "algorithms",
     "header-only"
   ],
-  "homepage": "https://github.com/nodef/httplib.cxx#readme",
+  "homepage": "https://github.com/nodef/cxxgraph.cxx#readme",
   "bugs": {
-    "url": "https://github.com/nodef/httplib.cxx/issues"
+    "url": "https://github.com/nodef/cxxgraph.cxx/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodef/httplib.cxx.git"
+    "url": "git+https://github.com/nodef/cxxgraph.cxx.git"
   },
-  "license": "MIT",
+  "license": "MPL-2.0",
   "author": "wolfram77@gmail.com",
-  "main": "httplib.h",
+  "main": "CXXGraph.hpp",
   "scripts": {
     "test": "bash build.sh test"
   }
