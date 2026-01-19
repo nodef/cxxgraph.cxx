@@ -1,6 +1,6 @@
 {
   "name": "cxxgraph.cxx",
-  "version": "4.2026.1",
+  "version": "4.2026.2",
   "description": "Header-Only C++ Library for Graph Representation and Algorithms; ZigRazor (2020).",
   "keywords": [
     "c++",
