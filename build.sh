@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # Fetch the latest version of the library
 fetch() {
-if [ -d "linenoise" ]; then return; fi
-URL="https://github.com/antirez/linenoise/archive/refs/heads/master.zip"
+if [ -d "CXXGraph" ]; then return; fi
+URL="https://github.com/ZigRazor/CXXGraph/archive/refs/heads/master.zip"
 ZIP="${URL##*/}"
-DIR="linenoise-master"
+DIR="CXXGraph-master"
 mkdir -p .build
 cd .build
 
@@ -27,11 +27,10 @@ fi
 cd ..
 
 # Copy the libs to the package directory
-echo "Copying libs to linenoise/ ..."
-rm -rf linenoise
-mkdir -p linenoise
-cp -f ".build/$DIR/linenoise.c" linenoise/
-cp -f ".build/$DIR/linenoise.h" linenoise/
+echo "Copying libs to CXXGraph/ ..."
+rm -rf CXXGraph
+mkdir -p CXXGraph
+cp -rf ".build/$DIR/include/CXXGraph/"* CXXGraph/
 echo ""
 }
 
