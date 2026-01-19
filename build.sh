@@ -37,8 +37,10 @@ echo ""
 
 # Test the project
 test() {
-echo "Running 01-example ..."
-clang -I. -o 01.exe examples/01-example.c && ./01.exe && echo -e "\n"
+echo "Running 01-dijkstra ..."
+clang++ -std=c++17 -I. -o 01.exe examples/01-dijkstra.cxx       && ./01.exe && echo -e "\n"
+echo "Running 02-floyd_warshall ..."
+clang++ -std=c++17 -I. -o 02.exe examples/02-floyd_warshall.cxx && ./02.exe && echo -e "\n"
 }
 
 
